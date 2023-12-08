@@ -1,0 +1,9 @@
+services:
+  app:
+    image: phuochungus/homeland_chatgpt
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - OPENAI_API_KEY
+      - REDIS_URL
